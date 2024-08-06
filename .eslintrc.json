@@ -4,12 +4,15 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["import"],
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "off"
+    "no-console": "off",
+    "import/extensions": ["error", "ignorePackage"]
   }
 }
